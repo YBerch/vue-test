@@ -1,6 +1,6 @@
 <template>
     <div>
-        {{ count }}
+        {{ getCount }}
         <button @click="incrementSync({step: stepSync})">increment +{{ stepSync }}</button>
         <button @click="decrementSync({step: stepSync})">decrement -{{ stepSync }}</button>
         <hr>

@@ -1,8 +1,8 @@
 import Vue from "vue";
 import Vuex from "vuex";
 
-import user from './user';
-import counter from './counter';
+import user from './modules/user';
+import counter from './modules/counter';
 
 Vue.use(Vuex);
 

@@ -1,7 +1,9 @@
-import * as types from './actionTypes';
+import * as types from '../actionTypes';
 
-const state = {
-  count: 0
+const state = () => {
+  return {
+    count: 0
+  }
 };
 
 const getters = {
