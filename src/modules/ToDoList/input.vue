@@ -7,6 +7,7 @@
 <script>
   export default {
     name: "InputCustom",
+    inheritAttrs: false,
 
     props: {
       value: String

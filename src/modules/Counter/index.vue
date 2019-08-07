@@ -1,6 +1,7 @@
 <template>
     <div>
         {{ getCount }}
+        <!--<input v-model="count1">-->
         <button @click="incrementSync({step: stepSync})">increment +{{ stepSync }}</button>
         <button @click="decrementSync({step: stepSync})">decrement -{{ stepSync }}</button>
         <hr>
@@ -42,6 +43,14 @@ import * as types from '../../store/actionTypes';
       })
     },
     computed: {
+      // count1: {
+      //   get () {
+      //     return this.$store.state.counter.count
+      //   },
+      //   set (value) {
+      //     this.$store.commit({type: "counter/INCREMENT_SYNC", step: +value})
+      //   }
+      // },
       ...mapState({
         count: state => state.count
       }),

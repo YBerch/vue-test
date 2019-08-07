@@ -1,5 +1,5 @@
 <template>
-    <button @click.prevent="onClick"><slot></slot></button>
+    <button @click="onClick"><slot></slot></button>
 </template>
 
 <script>
